@@ -1,0 +1,46 @@
+{
+  "name": "commaflow-csv",
+  "version": "0.1.0",
+  "description": "A streaming RFC-4180 CSV toolkit CLI: parse quoted fields across newlines, infer column types, select and filter columns, and convert to JSON, NDJSON, or aligned tables.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Jafn",
+  "bin": {
+    "commaflow-csv": "dist/cli.js",
+    "commaflow": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && vitest run",
+    "bench": "node scripts/bench.ts"
+  },
+  "keywords": [
+    "csv",
+    "cli",
+    "streaming",
+    "parser",
+    "rfc4180"
+  ],
+  "devDependencies": {
+    "@types/node": "^26.5.0",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.0"
+  }
+}
