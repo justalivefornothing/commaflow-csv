@@ -1,1 +1,13 @@
-export const VERSION = "0.1.0";
+export { CsvParser, CsvError, parseAll, parseStrict, chunked } from './parser.js';
+export type { ParseOptions, ParserOptions } from './parser.js';
+export { detectDelimiter, CANDIDATES } from './delimiter.js';
+export { classify, coerce, inferTypes, inferColumns, TypeVote } from './infer.js';
+export type { ValueType, TypeResult } from './infer.js';
+export { ColumnStats, formatNumber } from './stats.js';
+export type { ColumnSummary } from './stats.js';
+export { resolveColumn, resolveColumns, parseCondition, matches, makeFilter, pick } from './transforms.js';
+export type { Condition, Operator } from './transforms.js';
+export { csvRow, toObject, renderTable } from './format.js';
+export { charWidth, stringWidth, truncate, pad } from './width.js';
+export { readChunks, pump, Out } from './io.js';
+export type { Sink, PumpOptions } from './io.js';

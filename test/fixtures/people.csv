@@ -1,0 +1,7 @@
+id,name,city,age,joined,active,note
+1,Alice,Zürich,34,2021-03-14,true,"Prefers email, not phone"
+2,Bob,東京,27,2022-11-02,false,"Said ""hi"" then
+left"
+3,Chloé,Paris,41,2019-07-30,true,
+4,Dmitri,Москва,,2023-01-09,false,Trial account
+5,Eve,New York,29,2020-05-21,true,"Wide, 😀 emoji"
